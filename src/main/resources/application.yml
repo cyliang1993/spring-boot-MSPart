@@ -1,0 +1,17 @@
+spring:
+  datasource:
+   # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    readSize: 1
+    write:
+      url: jdbc:mysql://192.168.71.128:3306/cyl?useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    read1:
+      url: jdbc:mysql://192.168.71.129:3306/cyl?useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+
+  
